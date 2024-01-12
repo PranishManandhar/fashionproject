@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
+import Card from './components/Card';
+import Footer from './components/Footer';
+// import Carousel from './components/Carousel';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    <Nav/>
+    {/* <Carousel/> */}
 
-export default App;
+    <div className='w-screen overflow-scroll flex flex-row'>
+    <Card Name={"product1"} price={46.65}/>
+    <Card Name={"product2"} price={36.65}/>
+    <Card Name={"product3"} price={26.65}/>
+    <Card Name={"product4"} price={16.65}/>
+    <Card Name={"product5"} price={16.65}/>
+    <Card Name={"product6"} price={16.65}/>
+    <Card Name={"product6"} price={16.65}/>
+    </div>
+    <div className='w-screen overflow-scroll flex flex-row'>
+    <Card Name={"product1"} price={46.65}/>
+    <Card Name={"product2"} price={36.65}/>
+    <Card Name={"product3"} price={26.65}/>
+    <Card Name={"product4"} price={16.65}/>
+    <Card Name={"product5"} price={16.65}/>
+    <Card Name={"product6"} price={16.65}/>
+    <Card Name={"product6"} price={16.65}/>
+    </div>
+
+      <Footer/>
+    </>
+  )
+}
