@@ -17,7 +17,7 @@ const Footer = () => {
         <ul className='ml-80 pt-2'>
           <li>7</li>
           <li>8</li>
-          <li>9</li>
+          <li>address</li>
         </ul>
       </div>
     </div>
