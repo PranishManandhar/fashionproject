@@ -14,7 +14,11 @@ module.exports = {
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'authbackground':'url("https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg")'
+      }
+    },
   },
   plugins: [],
 }

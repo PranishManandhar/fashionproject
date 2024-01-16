@@ -12,7 +12,7 @@ const Footer = () => {
         <ul className='ml-80 pt-2'>
           <li></li> <br />
           <li></li> <br />
-          <li className='-ml-12'>copyright &copy by fashion store</li>
+          <li className='-ml-12'>copyright © by fashion store</li>
         </ul>
         <ul className='ml-80 pt-2'>
           <li>7</li>
