@@ -1,8 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import Nav from './Nav'
 import Card from './Card'
-import Footer from './Footer'
 
 const ProductPage = () => {
     const [cartitems, setcartitems] = useState(0);
@@ -21,7 +19,6 @@ const remove = ()=>{
 
     return (
         <div>
-            <Nav />
             <div className='flex'>
                 <img src="https://shorturl.at/flmI2" className='w-96 h-2/4 ' alt="Productimage" />
 
@@ -62,7 +59,6 @@ const remove = ()=>{
                 <Card Name={"product6"} price={16.65}/>
     </div>
             </div>
-            <Footer />
         </div>
     )
 }

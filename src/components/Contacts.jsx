@@ -1,11 +1,8 @@
 import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
 
 const Contacts = () => {
   return (
     <div>
-        <Nav/>
         <div className="container block shadow-xl p-20 m-5 text-lg">
             <label className='text-xl'>Enter your Name: </label> <br />
             <input type="text" placeholder='Name' className='w-full border-b border-black mb-5'/> <br />
@@ -18,7 +15,6 @@ const Contacts = () => {
             text-md pl-2 pr-2 font-extrabold mt-1.5 
             hover:bg-blue-900 text-white rounded-md hover:scale-110'>Mail To Us</button>
         </div>
-        <Footer/>
     </div>
   )
 }

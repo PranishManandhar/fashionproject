@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Nav from './Nav'
 
 const Authentication = () => {
     const [Tab, setTab] = useState('signup');
@@ -47,7 +46,6 @@ const Authentication = () => {
 
   return (
     <div>
-      <Nav/>
     <div>
         <div className="flex">
         <button onClick={()=>handleTab('signup')} className='bg-blue-500 shadow-3xl w-full h-10
