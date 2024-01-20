@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {useState} from 'react'
 import Card from './Card'
+import cartContext from '../context/cart/Cartcontext';
 
 const ProductPage = () => {
     const [cartitems, setcartitems] = useState(0);
@@ -17,18 +18,16 @@ const remove = ()=>{
     }
 }
 
+    const product = useContext(cartContext);
     return (
         <div>
             <div className='flex'>
                 <img src="https://shorturl.at/flmI2" className='w-96 h-2/4 ' alt="Productimage" />
 
                 <div>
-                    <h1 className='ml-20 font-semibold text-4xl mt-3 w-2/4 '>Royal Blue kurtha Suruwal set with treeleaf pattern</h1>
+                    <h1 className='ml-20 font-semibold text-4xl mt-3 w-2/4 '>{product.Name}</h1>
                     <div className='ml-20 font-thin text-lg text-justify mt-5 w-3/4 h-40 container shadow-2xl p-2'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse enim natus quas,
-                        non doloribus reiciendis qui nemo laborum sint accusantium eligendi, earum, ratione
-                        magnam ab facilis corrupti! Provident debitis error quasi voluptatem, voluptatum id
-                        architecto perspiciatis amet non fugiat totam?
+                        {product.Detail}
                     </div>
                         <button className='bg-blue-500 shadow-3xl w-40
                     text-md pl-2 pr-2 font-extrabold h-10 mt-8 ml-20 

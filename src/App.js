@@ -9,30 +9,34 @@ import Carousel from './components/Carousel';
 import Authentication from './components/Authentication';
 import ProductPage from './components/ProductPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CartState from './context/cart/CartState';
+
 
 export default function App() {
   return (
     <>
+    <CartState>
       <Router>
         <Nav />
         <Routes>
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart/>} />
           <Route path="/contact" element={<Contacts />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/id=" element={<ProductPage />} />
+          <Route path="/products/id=" element={<ProductPage/>} />
           <Route path="/authenticate" element={<Authentication />} />
           <Route
             path="/"
             element={(
               <>
                 <Carousel />
-                <Card Name="Product 1" price="35.99" />
+                <Card/>
               </>
             )}
           />
         </Routes>
         <Footer />
       </Router>
+      </CartState>
     </>
   );
 }
