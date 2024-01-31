@@ -24,7 +24,7 @@ const Nav = () => {
             <div className='container bg-blue-500 shadow-2xl p-8 rounded-md'>
               <div className='text-white text-2xl font-semibold mb-4'>Options</div>
               <div className='text-white text-lg mb-4'> <Link to="/cart">My Cart</Link> </div>
-              <div className='text-white text-lg mb-4'>Personal Detail</div>
+              <div className='text-white text-lg mb-4'> <Link to="/MyAccount">Personal Detail</Link></div>
               <div className='text-white text-lg mb-4'>Settings</div>
               <div className='text-white text-lg mb-4'>Logout</div>
             </div>

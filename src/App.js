@@ -10,6 +10,7 @@ import Authentication from './components/Authentication';
 import ProductPage from './components/ProductPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CartState from './context/cart/CartState';
+import Account from './components/Account';
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/id=" element={<ProductPage/>} />
           <Route path="/authenticate" element={<Authentication />} />
+          <Route path="/MyAccount" element={<Account />} />
           <Route
             path="/"
             element={(
